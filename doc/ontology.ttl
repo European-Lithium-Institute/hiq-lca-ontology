@@ -1,0 +1,97 @@
+@prefix : <https://european-lithium-institute.github.io/hiq-lca-ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://european-lithium-institute.github.io/hiq-lca-ontology/> .
+
+<https://european-lithium-institute.github.io/hiq-lca-ontology/> rdf:type owl:Ontology ;
+                                                                  owl:imports <http://ontology.bonsai.uno/core> ,
+                                                                              <https://bvco.ontology.link> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ontology.bonsai.uno/core#isInputOf
+<http://ontology.bonsai.uno/core#isInputOf> rdf:type owl:ObjectProperty .
+
+
+###  http://ontology.bonsai.uno/core#isOutputOf
+<http://ontology.bonsai.uno/core#isOutputOf> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontology.bonsai.uno/core#Activity
+<http://ontology.bonsai.uno/core#Activity> rdf:type owl:Class .
+
+
+###  http://ontology.bonsai.uno/core#Agent
+<http://ontology.bonsai.uno/core#Agent> rdf:type owl:Class .
+
+
+###  http://ontology.bonsai.uno/core#FlowObject
+<http://ontology.bonsai.uno/core#FlowObject> rdf:type owl:Class .
+
+
+###  https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af
+<https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://ontology.bonsai.uno/core#FlowObject> ,
+                                                                                                                            <https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> ;
+                                                                                                            rdfs:label "MaterialFlow"@en .
+
+
+###  https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4
+<https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://ontology.bonsai.uno/core#Agent> ,
+                                                                                                                            <https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703> ;
+                                                                                                            rdfs:label "BatteryValueChainAgent"@de .
+
+
+###  https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a
+<https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://ontology.bonsai.uno/core#Activity> ,
+                                                                                                                            <https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> ;
+                                                                                                            rdfs:label "BatteryActivity"@en .
+
+
+###  https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78
+<https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78> rdf:type owl:Class ;
+                                                                                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                                  owl:onProperty <http://ontology.bonsai.uno/core#isInputOf> ;
+                                                                                                                                  owl:someValuesFrom <https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a>
+                                                                                                                                ] ;
+                                                                                                            rdfs:subClassOf <https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af> ,
+                                                                                                                            <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261> ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://ontology.bonsai.uno/core#isInputOf> ;
+                                                                                                                              owl:someValuesFrom <https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a>
+                                                                                                                            ] ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://ontology.bonsai.uno/core#isOutputOf> ;
+                                                                                                                              owl:someValuesFrom <https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a>
+                                                                                                                            ] ;
+                                                                                                            rdfs:label "BatteryMaterialFlow"@en .
+
+
+###  https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703
+<https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703> rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94
+<https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce
+<https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
+<https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

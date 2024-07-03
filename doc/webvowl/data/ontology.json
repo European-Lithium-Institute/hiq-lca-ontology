@@ -1,0 +1,264 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://european-lithium-institute.github.io/hiq-lca-ontology", "https://w3id.org/emmo/domain/electrochemistry", "http://www.w3.org/2000/01/rdf-schema", "http://ontology.bonsai.uno/core", "https://w3id.org/emmo" ],
+    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology/"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4",
+    "baseIri" : "https://european-lithium-institute.github.io/hiq-lca-ontology",
+    "instances" : 0,
+    "label" : {
+      "de" : "BatteryValueChainAgent",
+      "IRI-based" : "HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1", "2" ]
+  }, {
+    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af",
+    "baseIri" : "https://european-lithium-institute.github.io/hiq-lca-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af",
+      "en" : "MaterialFlow"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4", "5" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EMMO_4207e895_8b83_4318_996a_72cfb32acd94"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#Agent",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#FlowObject",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlowObject"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a",
+    "baseIri" : "https://european-lithium-institute.github.io/hiq-lca-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a",
+      "en" : "BatteryActivity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "10", "18" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EMMO_13191289_6c2b_4741_93e1_82d53bd0e703"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261",
+    "baseIri" : "https://w3id.org/emmo/domain/electrochemistry",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#Activity",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78",
+    "baseIri" : "https://european-lithium-institute.github.io/hiq-lca-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78",
+      "en" : "BatteryMaterialFlow"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "3", "14" ]
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "20",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://ontology.bonsai.uno/core#isInputOf",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isInputOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "7"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "14",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "18",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#isOutputOf",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isOutputOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#isInputOf",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isInputOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "20"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  } ]
+}

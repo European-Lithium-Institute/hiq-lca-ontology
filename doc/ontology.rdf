@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://european-lithium-institute.github.io/hiq-lca-ontology/"
+     xml:base="https://european-lithium-institute.github.io/hiq-lca-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology/">
+        <owl:imports rdf:resource="http://ontology.bonsai.uno/core"/>
+        <owl:imports rdf:resource="https://bvco.ontology.link"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.bonsai.uno/core#isInputOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.bonsai.uno/core#isInputOf"/>
+    
+
+
+    <!-- http://ontology.bonsai.uno/core#isOutputOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.bonsai.uno/core#isOutputOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.bonsai.uno/core#Activity -->
+
+
+    <owl:Class rdf:about="http://ontology.bonsai.uno/core#Activity"/>
+    
+
+
+    <!-- http://ontology.bonsai.uno/core#Agent -->
+
+
+    <owl:Class rdf:about="http://ontology.bonsai.uno/core#Agent"/>
+    
+
+
+    <!-- http://ontology.bonsai.uno/core#FlowObject -->
+
+
+    <owl:Class rdf:about="http://ontology.bonsai.uno/core#FlowObject"/>
+    
+
+
+    <!-- https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af -->
+
+
+    <owl:Class rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af">
+        <rdfs:subClassOf rdf:resource="http://ontology.bonsai.uno/core#FlowObject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+        <rdfs:label xml:lang="en">MaterialFlow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4 -->
+
+
+    <owl:Class rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4">
+        <rdfs:subClassOf rdf:resource="http://ontology.bonsai.uno/core#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703"/>
+        <rdfs:label xml:lang="de">BatteryValueChainAgent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a -->
+
+
+    <owl:Class rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a">
+        <rdfs:subClassOf rdf:resource="http://ontology.bonsai.uno/core#Activity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+        <rdfs:label xml:lang="en">BatteryActivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78 -->
+
+
+    <owl:Class rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.bonsai.uno/core#isInputOf"/>
+                <owl:someValuesFrom rdf:resource="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.bonsai.uno/core#isInputOf"/>
+                <owl:someValuesFrom rdf:resource="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.bonsai.uno/core#isOutputOf"/>
+                <owl:someValuesFrom rdf:resource="https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">BatteryMaterialFlow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703"/>
+    
+
+
+    <!-- https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+    
+
+
+    <!-- https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

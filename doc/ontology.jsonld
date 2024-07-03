@@ -1,0 +1,118 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ontology.bonsai.uno/core#isInputOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ontology.bonsai.uno/core#isInputOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ontology.bonsai.uno/core#isOutputOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a"
+  } ]
+}, {
+  "@id" : "http://ontology.bonsai.uno/core#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://ontology.bonsai.uno/core#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://ontology.bonsai.uno/core#FlowObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://ontology.bonsai.uno/core#isInputOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://ontology.bonsai.uno/core#isOutputOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MaterialFlow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ontology.bonsai.uno/core#FlowObject"
+  }, {
+    "@id" : "https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"
+  } ]
+}, {
+  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "BatteryValueChainAgent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ontology.bonsai.uno/core#Agent"
+  }, {
+    "@id" : "https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703"
+  } ]
+}, {
+  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BatteryActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ontology.bonsai.uno/core#Activity"
+  }, {
+    "@id" : "https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"
+  } ]
+}, {
+  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BatteryMaterialFlow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://ontology.bonsai.uno/core"
+  }, {
+    "@id" : "https://bvco.ontology.link"
+  } ]
+}, {
+  "@id" : "https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
