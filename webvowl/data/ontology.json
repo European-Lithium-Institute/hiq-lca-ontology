@@ -31,7 +31,7 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "18",
@@ -133,7 +133,7 @@
     },
     "subClasses" : [ "6" ],
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "13"
   }, {
     "iri" : "http://ontology.bonsai.uno/core#Activity",
     "baseIri" : "http://ontology.bonsai.uno/core",
@@ -154,7 +154,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "6",
-    "superClasses" : [ "3", "14" ]
+    "superClasses" : [ "3", "13" ]
   } ],
   "property" : [ {
     "id" : "7",
@@ -169,7 +169,7 @@
     "id" : "12",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "13",
+    "id" : "14",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "15",
@@ -211,15 +211,15 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "11"
   }, {
-    "range" : "5",
-    "domain" : "3",
+    "range" : "13",
+    "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
-    "range" : "14",
-    "domain" : "6",
+    "range" : "5",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "13"
+    "id" : "14"
   }, {
     "range" : "2",
     "domain" : "0",
@@ -236,21 +236,21 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
-    "iri" : "http://ontology.bonsai.uno/core#isOutputOf",
-    "baseIri" : "http://ontology.bonsai.uno/core",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "isOutputOf"
-    },
-    "domain" : "6",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "19"
-  }, {
     "iri" : "http://ontology.bonsai.uno/core#isInputOf",
     "baseIri" : "http://ontology.bonsai.uno/core",
     "range" : "8",
     "label" : {
       "IRI-based" : "isInputOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#isOutputOf",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isOutputOf"
     },
     "domain" : "6",
     "attributes" : [ "object", "someValues", "external" ],
