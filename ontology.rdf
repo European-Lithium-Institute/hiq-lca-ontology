@@ -1,15 +1,60 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://european-lithium-institute.github.io/hiq-lca-ontology/"
-     xml:base="https://european-lithium-institute.github.io/hiq-lca-ontology/"
+<rdf:RDF xmlns="https://european-lithium-institute.github.io/hiq-lca-ontology#"
+     xml:base="https://european-lithium-institute.github.io/hiq-lca-ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://european-lithium-institute.github.io/hiq-lca-ontology">
         <owl:imports rdf:resource="http://ontology.bonsai.uno/core"/>
         <owl:imports rdf:resource="https://bvco.ontology.link"/>
+        <terms:abstract xml:lang="en">An aggregating ontology for battery LCA data</terms:abstract>
+        <terms:creator xml:lang="en">Simon Stier  &lt;simon.stier@lithium-institute.eu&gt;</terms:creator>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
+        <terms:title xml:lang="en">HiQ-LCA Ontology</terms:title>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 

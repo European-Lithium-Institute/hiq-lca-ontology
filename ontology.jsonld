@@ -41,6 +41,42 @@
   "@id" : "http://ontology.bonsai.uno/core#isOutputOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "An aggregating ontology for battery LCA data"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Simon Stier  <simon.stier@lithium-institute.eu>"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@language" : "en",
+    "@value" : "https://creativecommons.org/licenses/by/4.0/legalcode"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "HiQ-LCA Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://ontology.bonsai.uno/core"
+  }, {
+    "@id" : "https://bvco.ontology.link"
+  } ]
+}, {
   "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology#HIQLCA_28159c27_db88_4d06_89ae_2eb9c2d2b7af",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -94,14 +130,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "https://european-lithium-institute.github.io/hiq-lca-ontology/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://ontology.bonsai.uno/core"
-  }, {
-    "@id" : "https://bvco.ontology.link"
   } ]
 }, {
   "@id" : "https://w3id.org/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703",

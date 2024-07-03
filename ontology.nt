@@ -1,6 +1,31 @@
-<https://european-lithium-institute.github.io/hiq-lca-ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://european-lithium-institute.github.io/hiq-lca-ontology/> <http://www.w3.org/2002/07/owl#imports> <http://ontology.bonsai.uno/core> .
-<https://european-lithium-institute.github.io/hiq-lca-ontology/> <http://www.w3.org/2002/07/owl#imports> <https://bvco.ontology.link> .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://www.w3.org/2002/07/owl#imports> <http://ontology.bonsai.uno/core> .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://www.w3.org/2002/07/owl#imports> <https://bvco.ontology.link> .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://purl.org/dc/terms/abstract> "An aggregating ontology for battery LCA data"@en .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://purl.org/dc/terms/creator> "Simon Stier  <simon.stier@lithium-institute.eu>"@en .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode"@en .
+<https://european-lithium-institute.github.io/hiq-lca-ontology> <http://purl.org/dc/terms/title> "HiQ-LCA Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################

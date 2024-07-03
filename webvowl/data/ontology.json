@@ -3,7 +3,37 @@
   "header" : {
     "languages" : [ "de", "en" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://european-lithium-institute.github.io/hiq-lca-ontology", "https://w3id.org/emmo/domain/electrochemistry", "http://www.w3.org/2000/01/rdf-schema", "http://ontology.bonsai.uno/core", "https://w3id.org/emmo" ],
-    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology/"
+    "title" : {
+      "en" : "HiQ-LCA Ontology"
+    },
+    "iri" : "https://european-lithium-institute.github.io/hiq-lca-ontology",
+    "author" : [ "Simon Stier  <simon.stier@lithium-institute.eu>" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Simon Stier  <simon.stier@lithium-institute.eu>",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "An aggregating ontology for battery LCA data",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "HiQ-LCA Ontology",
+        "type" : "label"
+      } ]
+    }
   },
   "namespace" : [ ],
   "class" : [ {
@@ -31,7 +61,7 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "18",
@@ -48,7 +78,6 @@
       "de" : "BatteryValueChainAgent",
       "IRI-based" : "HIQLCA_9309dc98_2e4b_475d_aa7d_5f84b212a0f4"
     },
-    "attributes" : [ "external" ],
     "id" : "0",
     "superClasses" : [ "1", "2" ]
   }, {
@@ -60,7 +89,6 @@
       "en" : "MaterialFlow"
     },
     "subClasses" : [ "6" ],
-    "attributes" : [ "external" ],
     "id" : "3",
     "superClasses" : [ "4", "5" ]
   }, {
@@ -101,7 +129,6 @@
       "IRI-based" : "HIQLCA_b8a53e7a_3235_4d9c_b0e0_06297972b24a",
       "en" : "BatteryActivity"
     },
-    "attributes" : [ "external" ],
     "id" : "8",
     "superClasses" : [ "10", "18" ]
   }, {
@@ -133,7 +160,7 @@
     },
     "subClasses" : [ "6" ],
     "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "14"
   }, {
     "iri" : "http://ontology.bonsai.uno/core#Activity",
     "baseIri" : "http://ontology.bonsai.uno/core",
@@ -152,9 +179,8 @@
       "IRI-based" : "HIQLCA_f94d97e1_1009_4905_8f69_1586b0d87f78",
       "en" : "BatteryMaterialFlow"
     },
-    "attributes" : [ "external" ],
     "id" : "6",
-    "superClasses" : [ "3", "13" ]
+    "superClasses" : [ "3", "14" ]
   } ],
   "property" : [ {
     "id" : "7",
@@ -169,7 +195,7 @@
     "id" : "12",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "15",
@@ -198,53 +224,43 @@
       "IRI-based" : "isInputOf"
     },
     "domain" : "6",
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "7"
   }, {
     "range" : "10",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "range" : "3",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "11"
-  }, {
-    "range" : "13",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "12"
   }, {
     "range" : "5",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "14"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "14",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
   }, {
     "range" : "2",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "18",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
-  }, {
-    "iri" : "http://ontology.bonsai.uno/core#isInputOf",
-    "baseIri" : "http://ontology.bonsai.uno/core",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "isInputOf"
-    },
-    "domain" : "6",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "19"
   }, {
     "iri" : "http://ontology.bonsai.uno/core#isOutputOf",
     "baseIri" : "http://ontology.bonsai.uno/core",
@@ -253,12 +269,22 @@
       "IRI-based" : "isOutputOf"
     },
     "domain" : "6",
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://ontology.bonsai.uno/core#isInputOf",
+    "baseIri" : "http://ontology.bonsai.uno/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isInputOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "20"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   } ]
 }

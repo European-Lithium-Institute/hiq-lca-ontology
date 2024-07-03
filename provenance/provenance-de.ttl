@@ -3,5 +3,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <..\index-de.html> a prov:Entity;
+	 dc:title "HiQ-LCA Ontology";
+	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
+:agent0 a prov:Agent; foaf:name "Simon Stier  <simon.stier@lithium-institute.eu>".
